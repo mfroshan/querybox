@@ -122,7 +122,7 @@ export default function AdminCustomers() {
         { label: "Profession", name: "customer_profession", selected: true },
         { label: "Education", name: "customer_education", selected: true },
         { label: "Phone", name: "customer_phone", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
+        // { label: "Date Added", name: "date_added", selected: true },
         { label: "Status", name: "status", selected: true }
     ];
 
@@ -407,7 +407,7 @@ export default function AdminCustomers() {
                                             {isFieldActive('customer_profession') && <td>{item['customer_profession']}</td>}
                                             {isFieldActive('customer_education') && <td>{item['customer_education']}</td>}
                                             {isFieldActive('customer_phone') && <td>{item['customer_phone']}</td>}
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
                                             {isFieldActive('status') && <td>{item['status'] ? "active" : "inacitve"}</td>}
 
                                             <td style={{ display: 'flex' }}>

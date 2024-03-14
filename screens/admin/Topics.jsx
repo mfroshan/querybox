@@ -72,7 +72,7 @@ export default function AdminTopics() {
         { label: "Category", name: "category_name", selected: true },
         { label: "Topic Name", name: "topic_name", selected: true },
         { label: "Topic Description", name: "topic_description", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
+        // { label: "Date Added", name: "date_added", selected: true },
         { label: "Status", name: "status", selected: true }
     ];
 
@@ -366,7 +366,7 @@ export default function AdminTopics() {
                                             {isFieldActive('category_name') && <td>{item['category_name']}</td>}
                                             {isFieldActive('topic_name') && <td>{item['topic_name']}</td>}
                                             {isFieldActive('topic_description') && <td>{item['topic_description']}</td>}
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
                                             {isFieldActive('status') && <td>{item['status'] ? "active" : "inacitve"}</td>}
 
                                         <td style={{ display: 'flex' }}>

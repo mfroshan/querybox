@@ -66,7 +66,7 @@ export default function AdminHistory() {
         { label: "Question Title", name: "question_title", selected: true },
         { label: "Customer Name", name: "full_name", selected: true },
         { label: "Post Viewed", name: "post_id", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
+        // { label: "Date Added", name: "date_added", selected: true },
     ];
 
     const [data, setData] = useState(null);
@@ -344,7 +344,7 @@ export default function AdminHistory() {
                                                     :
                                                     <a href={`/question/${item['link_id']}`}>link to question</a>
                                             }</td>}
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
 
                                         </motion.tr>
                                     );

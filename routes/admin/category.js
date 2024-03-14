@@ -9,10 +9,12 @@ import { authMiddleware, csrfMiddleWare } from '../../middleware.js';
 const router = express.Router();
 
 router.post('/', authMiddleware, async (req, res) => {
+    console.log(req.body.feilds);
     let query = db.select([...req.body.feilds, "status","category_id"]).from("tbl_category");
     if (req.body.searchBy.length) {
         req.body.feilds.forEach((feild, i) => {
             if (feild != "status" && feild != "category_id") {
+                console.log(feild, `%${req.body.searchBy}%`)
                 query.orWhereLike(feild, `%${req.body.searchBy}%`)
             }
         });
@@ -20,7 +22,7 @@ router.post('/', authMiddleware, async (req, res) => {
     query.orderBy(req.body.sortBy);
     let users = await query;
     console.log(users);
-    console.log(new Date(users[0].date_added).toDateString());
+    // console.log(new Date(users[0].date_added).toDateString());
     if (users) {
         res.status(200).json(users);
     } else {

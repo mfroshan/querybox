@@ -192,7 +192,7 @@ export default function AdminStaff() {
         { label: "Pincode", name: "staff_pincode", selected: true },
         { label: "Phone", name: "staff_phone", selected: true },
         { label: "Salary", name: "staff_salary", selected: true },
-        { label: "Date Added", name: "date_added", selected: false },
+        // { label: "Date Added", name: "date_added", selected: false },
         { label: "Status", name: "status", selected: true }
     ];
 
@@ -483,7 +483,7 @@ export default function AdminStaff() {
                                         {isFieldActive('staff_pincode') && <td>{item['staff_pincode']}</td>}
                                         {isFieldActive('staff_phone') && <td>{item['staff_phone']}</td>}
                                         {isFieldActive('staff_salary') && <td>{item['staff_salary']}</td>}
-                                        {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                        {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
                                         {isFieldActive('status') && <td>{item['status'] ? "active" : "inacitve"}</td>}
 
                                             <td style={{ display: 'flex' }}>

@@ -64,7 +64,7 @@ export default function AdminBannedPosts() {
         { label: "Post", name: "tbl_post.post_id", selected: true },
         { label: "Reason", name: "reason", selected: true },
         { label: "Complaint Made By", name: "full_name", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
+        // { label: "Date Added", name: "date_added", selected: true },
     ];
 
     const [data, setData] = useState(null);
@@ -302,7 +302,7 @@ export default function AdminBannedPosts() {
                                             }</td>}
                                             {isFieldActive('reason') && <td>{item['reason']}</td>}
                                             {isFieldActive('full_name') && <td>{item['full_name']}</td>}
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
 
                                             <td>
                                                 <Button variant="contained" onClick={() => {removePost(item["post_id"])}}>Remove Post</Button>

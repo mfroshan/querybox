@@ -22,6 +22,7 @@ router.post('/', authMiddleware, async (req, res) => {
     if (req.body.searchBy.length) {
         req.body.feilds.forEach((feild, i) => {
             if (feild != "status") {
+                console.log(feild, `%${req.body.searchBy}%`)
                 query.orWhereLike(feild, `%${req.body.searchBy}%`)
             }
         });

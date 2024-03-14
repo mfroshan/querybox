@@ -64,7 +64,7 @@ export default function AdminComplaints() {
         { label: "Post", name: "tbl_post.post_id", selected: true },
         { label: "Reason", name: "reason", selected: true },
         { label: "Complaint Made By", name: "full_name", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
+        // { label: "Date Added", name: "date_added", selected: true },
     ];
 
     const [data, setData] = useState(null);
@@ -309,7 +309,7 @@ export default function AdminComplaints() {
                                             }</td>}
                                             {isFieldActive('reason') && <td>{item['reason']}</td>}
                                             {isFieldActive('full_name') && <td>{item['full_name']}</td>}
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
                                             {item['status'] == "published" ? <td>Waiting for action</td> : <td>Post Banned</td> } 
                                             <td>
                                                 {item['status'] == "published" ?

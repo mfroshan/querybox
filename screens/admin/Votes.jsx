@@ -66,7 +66,7 @@ export default function AdminVotes() {
         { label: "Customer Name", name: "full_name", selected: true },
         { label: "Post", name: "post_id", selected: true },
         { label: "Vote", name: "vote", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
+        // { label: "Date Added", name: "date_added", selected: true },
     ];
 
     const [data, setData] = useState(null);
@@ -362,7 +362,7 @@ export default function AdminVotes() {
                                             </td>
                                             }
 
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
 
                                         </motion.tr>
                                     );

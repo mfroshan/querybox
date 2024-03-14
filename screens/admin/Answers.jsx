@@ -72,7 +72,7 @@ export default function AdminAnswers() {
         { label: "Question Title", name: "question_title", selected: true },
         { label: "Answer", name: "answer_content", selected: true },
         { label: "Customer Name", name: "full_name", selected: true },
-        { label: "Date Added", name: "date_added", selected: false },
+        // { label: "Date Added", name: "date_added", selected: false },
         { label: "Status", name: "status", selected: true }
     ];
 
@@ -365,7 +365,7 @@ export default function AdminAnswers() {
 
                                             }
                                             {isFieldActive('full_name') && <td>{item['full_name']}</td>}
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
                                             {isFieldActive('status') && <td>{item['status']}</td>}
 
                                         </motion.tr>

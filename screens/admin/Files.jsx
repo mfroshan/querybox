@@ -65,7 +65,7 @@ export default function AdminFiles() {
         { label: "Id", name: "file_id", selected: true },
         { label: "File Name ", name: "file_name", selected: true },
         { label: "Customer Name ", name: "full_name", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
+        // { label: "Date Added", name: "date_added", selected: true },
         { label: "Post", name: "post_id", selected: true },
         { label: "Status", name: "status", selected: true }
     ];
@@ -352,7 +352,7 @@ export default function AdminFiles() {
                                             {isFieldActive('file_id') && <td>{item['file_id']}</td>}
                                             {isFieldActive('file_name') && <td>{item['file_name']}</td>}
                                             {isFieldActive('full_name') && <td>{item['full_name']}</td>}
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
                                             {isFieldActive('post_id') && <td>{
                                                 item['type'] == "answer" ?
                                                     <a href={`/answer-view/${item['link_id']}`}>link to answer</a>

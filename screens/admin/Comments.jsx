@@ -66,7 +66,7 @@ export default function AdminComments() {
         { label: "Customer Name", name: "full_name", selected: true },
         { label: "Post", name: "post_id", selected: true },
         { label: "Comment", name: "comment", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
+        // { label: "Date Added", name: "date_added", selected: true },
         { label: "Status", name: "tbl_comment.status", selected: true },
     ];
 
@@ -348,7 +348,7 @@ export default function AdminComments() {
 
                                             {isFieldActive('comment') && <td>{item['comment']}</td>}
 
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
+                                            {/* {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>} */}
                                             {isFieldActive('tbl_comment.status') && <td>{item['status'] ? "active" : "inacitve"}</td>}
 
                                         </motion.tr>

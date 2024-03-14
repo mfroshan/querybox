@@ -65,7 +65,6 @@ export default function AdminCategories() {
         { label: "Id", name: "category_id", selected: true },
         { label: "Category Name", name: "category_name", selected: true },
         { label: "Category Description", name: "category_description", selected: true },
-        { label: "Date Added", name: "date_added", selected: true },
         { label: "Status", name: "status", selected: true }
     ];
 
@@ -336,7 +335,6 @@ export default function AdminCategories() {
                                             {isFieldActive('category_id') && <td>{item['category_id']}</td>}
                                             {isFieldActive('category_name') && <td>{item['category_name']}</td>}
                                             {isFieldActive('category_description') && <td>{item['category_description']}</td>}
-                                            {isFieldActive('date_added') && <td>{formatDate(item['date_added'])}</td>}
                                             {isFieldActive('status') && <td>{item['status'] ? "active" : "inacitve"}</td>}
 
                                             <td style={{ display: 'flex' }}>
